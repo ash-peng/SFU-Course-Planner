@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  /* font-size: 12px; */
+  font-family: 'Droid Sans Mono Slashed', 'Nunito', 'Jetbrains Mono', 'Helvetica-Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: 'Droid Sans Mono Slashed', 'source-code-pro', 'Menlo', 'Monaco', 'Consolas', 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: local('Nunito'), url(./fonts/Nunito-Regular.ttf) format('opentype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+@font-face {
+  font-family: 'Jetbrains Mono';
+  src: local('Jetbrains Mono'), url(./fonts/JetBrainsMono-Regular.ttf) format('opentype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+@font-face {
+  font-family: 'Droid Sans Mono Slashed';
+  src: local('Droid Sans Mono Slashed'), url(./fonts/DroidSansMonoSlashed.ttf) format('opentype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}

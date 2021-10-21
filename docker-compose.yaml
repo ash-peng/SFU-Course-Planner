@@ -1,0 +1,32 @@
+version: "3.8"
+
+services:
+  backend:
+    restart: always
+    container_name: backend
+    build:
+      context: ./backend/
+      dockerfile: Dockerfile
+    command: bash -c "python manage.py makemigrations && python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+    volumes:
+      - .:/backend/
+    ports:
+      - "8000:8000"
+
+  frontend:
+    restart: always
+    command : npm start
+    container_name: frontend
+    build:
+      context: ./frontend/
+      dockerfile: Dockerfile
+    volumes:
+      - .:/frontend/
+      - .:/frontend/node_modules
+    ports:
+      - "3000:3000"
+    stdin_open: true
+    depends_on:
+      - "backend"
+    command:
+      npm start
