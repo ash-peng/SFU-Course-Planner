@@ -25,7 +25,6 @@
     - Because of race conditions of different containers, please allow time for `You can now view frontend in the browser.` to appear in the console, before going to the page
 
 ## What features should we be looking for when marking your project?
-The purpose of this is not to make you write an essay, just to guide the marking so we don't miss anything important. (There will be many projects, and the TAs are human.)
 - A user can add, delete and update courses, separated into completed and uncompleted courses. For completed ones, the user can specify the grade obtained for GPA calculation.
 - While adding a course: After the course number is specified (e.g., CMPT 383), the website provides hints (instantly fetched from SFU Open API) of the course name and the prerequisites so that the user does not have to look them up manually.
 - Refreshing the page would generate a course map of all added courses with their prerequisites connected by arrows.
